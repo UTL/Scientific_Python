@@ -8,11 +8,11 @@ b = Matrix.filled(rows=2, cols=2, value=1)
 
 '''
 print(a.data == [[1, 2], [3, 4]]) 
-#a.data = [[0,0], [0,0]]          # it does not work, and it shouldn't!
+#a.data = [[0,0], [0,0]]          # it does not work, and it shouldn't!'''
+print(a.data == [[1, 2], [3, 4]])
 internal = a.data                 # PROBLEM HERE
 internal[0][0] = 42
 print(a.data == [[1, 2], [3, 4]])
-'''
 
 print("Should print 1: ", a[0,0])
 print("Should print 3: ", a[1,0])

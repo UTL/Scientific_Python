@@ -1,3 +1,4 @@
+import copy
 class Matrix(object):
     '''This class represents matrices.'''
 
@@ -5,7 +6,7 @@ class Matrix(object):
         self._data = data
 
     def _getData(self):
-        return self._data
+        return copy.deepcopy(self._data)
 
 
     # getitem and setitem are for overloading the square bracket operator []
